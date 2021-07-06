@@ -1,0 +1,9 @@
+cleEntry = {None, PURPLE , ORANGE }; 
+cdf = {ORANGE_cdf_0}; 
+remotelevel = {ORANGE_remotelevel_0}; 
+direction = {ORANGE_direction_0}; 
+operation = {ORANGE_guarddirective__operation_0}; 
+haslevel = [purple, orange ]; 
+hasremotelevel = [purple]; 
+hasdirection = [egress]; 
+hasoperation = [allow]; 

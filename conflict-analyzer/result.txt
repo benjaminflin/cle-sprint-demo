@@ -1,0 +1,31 @@
+Options selected:
+  file: /home/closure/gaps/sprint-demo/example1/annotated/example1.c
+  clang_args: -x,c++,-stdlib=libc++
+  annotation_style: naive
+  tool_chain: clang
+  schema: ../../cle-spec/schema/cle-schema.json
+  liberal: True
+Skipping CLE schema verification
+Transformed Tree:
+key: level value: purple
+key: level value: orange
+key: cdf value: [{'remotelevel': 'purple', 'direction': 'egress', 'guarddirective': {'operation': 'allow'}}]
+Writing cle mappings file
+Options selected:
+  file: /home/closure/gaps/sprint-demo/example1/annotated/example1.c
+  clang_args: -x,c++,-stdlib=libc++
+  annotation_style: naive
+  tool_chain: clang
+  schema: ../../cle-spec/schema/cle-schema.json
+  liberal: True
+Skipping CLE schema verification
+Transformed Tree:
+['cledef', 3, [], 'PURPLE', {'level': 'purple'}]
+['cledef', 5, [], 'ORANGE', {'level': 'orange', 'cdf': [{'remotelevel': 'purple', 'direction': 'egress', 'guarddirective': {'operation': 'allow'}}]}]
+['clebegin', 20, [], 'ORANGE']
+['cleend', 22, [], 'ORANGE']
+['clebegin', 28, [], 'PURPLE']
+['cleend', 30, [], 'PURPLE']
+['clebegin', 38, [], 'PURPLE']
+['cleend', 40, [], 'PURPLE']
+Writing transformed file and cle mappings file

@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "/home/closure/gaps/sprint-demo/conflict-analyzer/cle2zinc.py", line 157, in <module>
+    main()
+  File "/home/closure/gaps/sprint-demo/conflict-analyzer/cle2zinc.py", line 141, in main
+    toks   = cindex_tokenizer(args.file, args.clang_args.split(','))
+  File "/home/closure/gaps/sprint-demo/conflict-analyzer/qd_cle_preprocessor.py", line 17, in cindex_tokenizer
+    return Index.create().parse(f,args=a).cursor.get_tokens()
+  File "/usr/local/lib/python3.8/dist-packages/clang/cindex.py", line 2720, in parse
+    return TranslationUnit.from_source(path, args, unsaved_files, options,
+  File "/usr/local/lib/python3.8/dist-packages/clang/cindex.py", line 2835, in from_source
+    raise TranslationUnitLoadError("Error parsing translation unit.")
+clang.cindex.TranslationUnitLoadError: Error parsing translation unit.
+Traceback (most recent call last):
+  File "/home/closure/gaps/sprint-demo/conflict-analyzer/qd_cle_preprocessor.py", line 249, in <module>
+    main()
+  File "/home/closure/gaps/sprint-demo/conflict-analyzer/qd_cle_preprocessor.py", line 233, in main
+    toks   = cindex_tokenizer(args.file, args.clang_args.split(','))
+  File "/home/closure/gaps/sprint-demo/conflict-analyzer/qd_cle_preprocessor.py", line 17, in cindex_tokenizer
+    return Index.create().parse(f,args=a).cursor.get_tokens()
+  File "/usr/local/lib/python3.8/dist-packages/clang/cindex.py", line 2720, in parse
+    return TranslationUnit.from_source(path, args, unsaved_files, options,
+  File "/usr/local/lib/python3.8/dist-packages/clang/cindex.py", line 2835, in from_source
+    raise TranslationUnitLoadError("Error parsing translation unit.")
+clang.cindex.TranslationUnitLoadError: Error parsing translation unit.
+clang-10: error: no such file or directory: 'None.mod.c'
+clang-10: error: no input files
+llvm-link: temp_*.bc: error: Could not open input file: No such file or directory
+llvm-link: error:  loading file 'temp_*.bc'
+/home/closure/gaps/sprint-demo/conflict-analyzer/conflictAnalyzer.sh: line 19: temp.bc: No such file or directory
+Error: cannot open file '/home/closure/gaps/sprint-demo/example1/init_cle.mzn'.
+
+rm: cannot remove '*.bc': No such file or directory

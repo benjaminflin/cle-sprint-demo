@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "*.def": "cpp",
+        "*.inc": "cpp"
+    },
+    "git.ignoreLimitWarning": true,
+    // "vscle.conflictAnalyzerPath": "~/gaps/sprint-demo/conflict-analyzer/conflictAnalyzer.py"
+    "vscle.conflictAnalyzerPath": "~/gaps/cvi/cle-extension/conflict-analyzer/conflict_analyzer.py"
+}
